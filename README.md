@@ -1,59 +1,103 @@
-# EcommerceFrontend
+# Plataforma eCommerce -  Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+Esta es una pequeña aplicación en Angular para la gestión de productos. Permite listar, agregar, editar y eliminar productos de una base de datos simulada.
 
-## Development server
+## Requisitos
 
-To start a local development server, run:
+- Node.js (>= 14.x)
+- npm (>= 6.x)
+- Angular CLI (>= 12.x)
 
+## Instalación
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/tu_usuario/tu_repositorio.git
+   cd tu_repositorio
+   ```
+
+2. Instalar las dependencias:
+   ```bash
+   npm install
+   ```
+
+## Uso
+
+1. Iniciar el servidor de desarrollo:
+   ```bash
+   ng serve
+   ```
+
+2. Abrir en el navegador:
+   ```
+   http://localhost:4200/
+   ```
+
+## Creación de Componentes y Servicios
+
+### 1️⃣ Crear el Proyecto (Si aún no lo has hecho)
 ```bash
-ng serve
+ng new ecommerce_frontend
+cd ecommerce_frontend
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 2️⃣ Generar los Componentes
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+#### 📌 Componente `clientes-list`
 ```bash
-ng generate component component-name
+ng generate component app/clientes-list
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+#### 📌 Componente `product-form`
 ```bash
-ng generate --help
+ng generate component app/product-form
 ```
 
-## Building
-
-To build the project run:
-
+#### 📌 Componente `product-list`
 ```bash
-ng build
+ng generate component app/product-list
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+#### 📌 Componente `proveedores-list`
 ```bash
-ng test
+ng generate component app/proveedores-list
 ```
 
-## Running end-to-end tests
+### 3️⃣ Generar los Servicios
 
-For end-to-end (e2e) testing, run:
-
+#### 📌 Servicio `client.service.ts`
 ```bash
-ng e2e
+ng generate service app/services/client
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Estructura del Proyecto
 
-## Additional Resources
+El proyecto contiene los siguientes componentes y servicios:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **ProductService**: Servicio encargado de la gestión de productos.
+  ```bash
+  ng generate service product
+  ```
+
+- **ProductListComponent**: Componente que muestra la lista de productos.
+  ```bash
+  ng generate component product-list
+  ```
+
+## Funcionalidades
+
+- Listado de productos con paginación.
+- Opciones para agregar, editar y eliminar productos.
+- Uso de Angular Material para la interfaz de usuario.
+
+## Tecnologías Utilizadas
+
+- **Angular** - Framework de desarrollo web.
+- **Angular Material** - Biblioteca de componentes de UI.
+- **TypeScript** - Lenguaje de programación.
+- **JSON Server** (opcional) - Simulación de una API REST.
+
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT.
