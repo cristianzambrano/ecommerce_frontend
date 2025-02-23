@@ -1,6 +1,6 @@
 # Plataforma eCommerce -  Frontend
 
-![Captura de la aplicación](img.png)
+![Captura de la aplicación](img1.png)
 Esta es una pequeña aplicación en Angular para la gestión de productos. Permite listar, agregar, editar y eliminar productos de una base de datos simulada.
 
 ## Requisitos
